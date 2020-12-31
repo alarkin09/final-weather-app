@@ -12,32 +12,44 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main-container">
       <div class="weather-app">
-        <form>
-          <input type="text" placeholder="Enter city name" />
-          <input type="submit" value="Go" />
-        </form>
-        <h1>San Francisco</h1>
-        <ul>
-          <li>Thursday 16:10</li>
-          <li>Sunny</li>
-        </ul>
         <div class="row">
           <div class="col-6">
+            <form>
+              <input type="text" placeholder="Enter city name" />
+              <input type="submit" value="Go" />
+            </form>
+            <h1>San Francisco</h1>
+            <ul class="current-date">
+              <li>Thursday 16:10</li>
+              <li>Sunny</li>
+            </ul>
             <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" />15°
             C / F
-          </div>
-          <div class="col-6">
-            <ul>
+            <ul class="current-stats">
               <li>Precipitation</li>
               <li>Humidity</li>
               <li>Wind</li>
-            </ul>
-          </div>
-        </div>
+            </div>
+              <div class="col-6">
+                <ul>
+                  <li>15.00</li>
+                  <li>18.00</li>
+                  <li>21.00</li>
+                  <li>0.00</li>
+                  <li>03.00</li>
+                  <li>06.00</li>
+                </ul>
+              </div>
+              </div>
         <small
           ><a
             href="https://github.com/alarkin09/final-weather-app"

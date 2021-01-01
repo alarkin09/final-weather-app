@@ -37,9 +37,11 @@ function displayTemperature(response){
     windElement.innerHTML = response.data.wind.speed;
     let dateElement = document.querySelector("#date");
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
+    let iconElement = document.querySelector("#icon");
 }
+let city = "Paris";
 let apiKey = "29a44231d6c7563fcc1740ef29d751ed";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=San Francisco&appid=${apiKey}&units=metric`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);

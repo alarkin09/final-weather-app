@@ -8,6 +8,9 @@ body {
   border: 1px solid #ffc93c;
   border-radius: 5px;
 }
+form {
+  padding: 10px;
+}
 h1 {
   font-size: 32px;
   font-family: Poppins;
@@ -15,9 +18,10 @@ h1 {
   font-weight: bold;
   padding: 10px;
 }
-form {
-  padding: 10px;
+.current-temperature {
+  font-size: 48px;
 }
+
 ul {
   list-style: none;
 }

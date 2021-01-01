@@ -24,6 +24,7 @@ h1 {
 
 ul {
   list-style: none;
+  text-transform: capitalize;
 }
 .current-date {
   margin: 0;

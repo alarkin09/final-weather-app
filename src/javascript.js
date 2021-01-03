@@ -40,6 +40,8 @@ function displayTemperature(response){
     let iconElement = document.querySelector("#icon");
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
+
+    celsiusTemperature = response.data.main.temp;
 }
 function searchCity(city) {
     let apiKey = "29a44231d6c7563fcc1740ef29d751ed";
@@ -55,13 +57,25 @@ function handleSubmit (event){
 
 function showFahrenheitTemperature(event) {
     event.preventDefault();
-    let fahrenheitTemperature = (4 * 9)/5 + 32;
+    let fahrenheitTemperature = (celsiusTemperature * 9)/5 + 32;
     let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = fahrenheitTemperature;
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
+function showCelsiusTemperature(event) {
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null; 
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink=document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+let celsiusLink=document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
+
+searchCity("San Francisco");

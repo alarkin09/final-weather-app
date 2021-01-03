@@ -35,6 +35,9 @@ li.first-letter {
   padding: 0;
   color: #ff6f3c;
 }
+.unit {
+  font-size: 16px;
+}
 .current-stats {
   margin: 0;
   padding: 0;

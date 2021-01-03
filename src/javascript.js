@@ -1,4 +1,3 @@
-alert("Greetings!");
 
 function formatDate(timestamp){
 let date = new Date (timestamp);
@@ -54,21 +53,20 @@ function displayForecast(response) {
  
   for (let index = 0; index < 5; index ++) {
     let forecast = response.data.list[index];
-    forecastElement.innerHTML += `<div class = col-2">
+    forecastElement.innerHTML += `<div class = col-6">
     <h3>
-    ${formatHours(forecast.dt*1000)}
-    </h3>
+  ${formatHours(forecast.dt*1000)}
+   </h3>
     <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
     alt=""/>
      <div class = "weather-forecast-temperature">
      <strong> ${Math.round(forecast.main.temp_max)}°/ </strong>${Math.round(forecast.main.temp_min)}°
      </div>
      </div>
-    `;
-  }
+   `;
+ }
 }
   
-
 function searchCity(city) {
     let apiKey = "29a44231d6c7563fcc1740ef29d751ed";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;

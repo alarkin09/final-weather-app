@@ -21,93 +21,101 @@
   <body>
     <div class="main-container">
       <div class="weather-app">
-        <div class="row">
-          <div class="col-6">
-            <form id="search-form">
-              <div class="row">
-                <div class="col-8">
-                  <input
-                    type="search"
-                    placeholder="Enter city name"
-                    class="form-control"
-                    id="city-input"
-                    autocomplete="off"
-                  />
+        <div class="weather-app-wrapper">
+          <div class="row">
+            <div class="col-6">
+              <form id="search-form">
+                <div class="row">
+                  <div class="col-8">
+                    <input
+                      type="search"
+                      placeholder="Enter city name"
+                      class="form-control"
+                      id="city-input"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="submit"
+                      value="Search"
+                      class="btn btn-primary"
+                    />
+                  </div>
                 </div>
-                <div class="col-3">
-                  <input type="submit" value="Search" class="btn btn-primary" />
-                </div>
+              </form>
+              <h1 id="city"></h1>
+              <ul class="current-date">
+                <li>
+                  <strong>Last updated: </strong
+                  ><span id="date">Thursday 16:10</span>
+                </li>
+                <li class="description" id="description">Sunny</li>
+              </ul>
+              <div class="current-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  id="icon"
+                  class="float-left"
+                /><strong id="temperature"></strong>
+                <span class="unit">
+                  <a href="#" id="celsius-link" class="active">°C</a> /
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
               </div>
-            </form>
-            <h1 id="city"></h1>
-            <ul class="current-date">
-              <li>
-                <strong>Last updated: </strong
-                ><span id="date">Thursday 16:10</span>
-              </li>
-              <li class="description" id="description">Sunny</li>
-            </ul>
-            <div class="current-temperature">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                id="icon"
-                class="float-left"
-              /><strong id="temperature"></strong>
-              <span class="unit">
-                <a href="#" id="celsius-link" class="active">°C</a> /
-                <a href="#" id="fahrenheit-link">°F</a></span
-              >
+
+              <ul class="current-stats">
+                <li><strong>Humidity</strong> <span id="humidity"></span>%</li>
+                <li><strong>Wind</strong> <span id="wind"></span> Km/H</li>
+              </ul>
             </div>
+            <div class="col-6">
+              <ul class="extended-forecast">
+                <li>
+                  15.00<img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  />
+                </li>
 
-            <ul class="current-stats">
-              <li><strong>Humidity</strong> <span id="humidity"></span>%</li>
-              <li><strong>Wind</strong> <span id="wind"></span> Km/H</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <ul class="extended-forecast">
-              <li>
-                15.00<img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                />
-              </li>
-
-              <li>
-                18.00<img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                />
-              </li>
-              <li>
-                21.00<img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                />
-              </li>
-              <li>
-                0.00<img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                />
-              </li>
-              <li>
-                03.00<img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                />
-              </li>
-              <li>
-                06.00<img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                />
-              </li>
-            </ul>
+                <li>
+                  18.00<img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  />
+                </li>
+                <li>
+                  21.00<img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  />
+                </li>
+                <li>
+                  0.00<img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  />
+                </li>
+                <li>
+                  03.00<img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  />
+                </li>
+                <li>
+                  06.00<img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <small
+          ><a
+            href="https://github.com/alarkin09/final-weather-app"
+            target="_blank"
+            >Open source code</a
+          >
+          by Allyson Larkin</small
+        >
       </div>
     </div>
-    <small
-      ><a href="https://github.com/alarkin09/final-weather-app" target="_blank"
-        >Open source code</a
-      >
-      by Allyson Larkin</small
-    >
     <script src="src/javascript.js"></script>
   </body>
 </html>

@@ -36,8 +36,6 @@ li.first-letter,
 .current-date {
   margin: 0;
   padding: 0;
-  margin: 0;
-  padding: 0;
   color: #ff6f3c;
 }
 .unit {
@@ -48,9 +46,14 @@ li.first-letter,
   padding: 0;
   color: #ff6f3c;
 }
-.extended-forecast {
+h3 {
   font-size: 16px;
   color: #155263;
+  padding-top: 10px;
+}
+
+.weather-forecast {
+  margin: 0px auto;
 }
 small {
   font-size: 12px;

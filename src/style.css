@@ -16,7 +16,7 @@ h1 {
   font-family: Poppins;
   color: #155263;
   font-weight: bold;
-  padding: 10px;
+  padding: 10px, 0px;
 }
 .current-temperature {
   font-size: 48px;
@@ -25,7 +25,8 @@ h1 {
 ul {
   list-style: none;
 }
-li.first-letter {
+li.first-letter,
+.description {
   text-transform: capitalize;
 }
 .current-date {

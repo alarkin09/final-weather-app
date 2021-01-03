@@ -51,3 +51,13 @@ small {
   font-size: 12px;
   color: #ff6f3c;
 }
+.current-temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.current-temperature .active:hover {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}

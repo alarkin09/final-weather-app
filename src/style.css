@@ -1,11 +1,12 @@
 body {
   font-family: Poppins;
+  background: #fff5c0;
 }
 .weather-app-wrapper {
   max-width: 650px;
   margin: 20px auto;
   padding: 2%;
-  border: 1px solid #ffc93c;
+  border: 2px solid white;
   border-radius: 5px;
 }
 .weather-app {
@@ -24,10 +25,12 @@ h1 {
 }
 .current-temperature {
   font-size: 48px;
+  color: #155263;
 }
 
 ul {
   list-style: none;
+  font-size: 16px;
 }
 li.first-letter,
 .description {
@@ -51,17 +54,26 @@ h3 {
   color: #155263;
   padding-top: 10px;
 }
+.weather-forecast {
+  text-align: center;
+  color: #155263;
+}
+
+img {
+  text-align: center;
+  max-width: 65px;
+}
 small {
   font-size: 12px;
   color: #ff6f3c;
 }
 .current-temperature .active {
-  color: black;
+  color: #16697a;
   cursor: default;
   text-decoration: none;
 }
 .current-temperature .active:hover {
-  color: black;
+  color: #16697a;
   cursor: default;
   text-decoration: none;
 }
